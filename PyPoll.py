@@ -26,6 +26,7 @@ import os
 total_votes = 0         # Data 1 - total vote counter
 candidate_options = []  # Data 2 - list of candidates
 candidate_votes = {}    # Data 4 - dictionary of candidate votes
+candidate_results =""   # Empty string for printing Data 2, 3, & 4
 
 # Initialize Data 5 variables - Winning Candidate and Winning Count Tracker
 winning_candidate = ""
@@ -89,7 +90,7 @@ for candidate_name in candidate_votes:
     vote_percentage = float(votes) / float(total_votes) * 100
     
     # 4. Print the candidate name and percentage of votes.
-    print(f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
+    candidate_results = candidate_results + f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n"
 
     #----------------------------------------------------------------
     # Data 5 - Determine winning vote count and candidate
@@ -110,8 +111,7 @@ winning_candidate_summary = (
     f"Winner: {winning_candidate}\n"
     f"Winning Vote Count: {winning_count:,}\n"
     f"Winning Percentage: {winning_percentage:.1f}%\n"
-    f"-------------------------\n")
-print(winning_candidate_summary)
+    f"-------------------------")
 
 #----------------------------------------------------------------
 # WRITE OUTPUT
@@ -121,7 +121,11 @@ file_to_save = os.path.join("analysis", "election_analysis.txt")
 
 # Using the with statement open the file as a text file.
 with open(file_to_save, "w") as txt_file:
-     # Write header
-     txt_file.write("Counties in the Election\n------------------------\n")
-     # Write three counties to the file.
-     txt_file.write("Arapahoe\nDenver\nJefferson")
+     # Results
+     txt_file.write(
+     f"Election Results\n"
+     "------------------------\n"
+     f"Total Votes: {total_votes:,}\n"
+     "------------------------\n"
+     + candidate_results
+     + winning_candidate_summary)
