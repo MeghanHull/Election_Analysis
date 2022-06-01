@@ -1,18 +1,29 @@
-# Election_Analysis
+# Election Analysis
 
-## Project Overview
-A Colorado Board of Elections employee has given you the following tasks to complete the election audit of a recent local congressional election:
-1. The total number of votes cast;
-2. A complete list of candidates who received votes;
-3. The percentage of votes each candidate won;
-4. The total number of votes each candidate won;
-5. The winner of the election based on popular vote.
+## Overview of Election Audit
+### Project Overview
+A Colorado Board of Elections employee requested a Python script to automate some election auditing data analysis.  Using a recent local congressional election as a test case, the script is to provide a summary of:
+- The total number of votes cast;
+- A complete list of candidates who received votes;
+- The percentage of votes each candidate won;
+- The total number of votes each candidate won;
+- The winner of the election based on popular vote.
 
-## Resources
-- Data Source: election.csv
+In subsequent review, the election commission has requested the following additional data:
+- The voter turnout for each county;
+- The percentage of votes from each county out of the total count;
+- The county with the highest turnout.
+
+### Purpose
+The purpose of this analysis is to summarize the recent Colorado congressional election results for the election commission's audit, with the goal of extending the analysis methodology to any election.
+
+### Resources
+- Data Source: [election_results.csv](Resources/election_results.csv) 
 - Software: Python 3.7
+- Analysis Code: [PyPoll_Challenge.py](PyPoll_Challenge.py)
 
-## Summary
+## Election Audit Results
+### Original Audit Test Case Analysis
 The analysis of the election show that:
 - There were 369,711 votes cast in the election.
 - The candidates were:
@@ -26,6 +37,8 @@ The analysis of the election show that:
 - The winner of the election was:
   - Diana DeGette, who received 3.1% of the vote and 11,606 number of votes.
 
-## Challenge Overview
+### Additional County
 
-## Challenge Summary
+### Challenges & Limitations
+
+## Election-Audit Summary
