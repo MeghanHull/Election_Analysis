@@ -45,7 +45,7 @@ The analysis of the election show that:
 ### Summary of Python *PyPoll_Challenge.py* Script
 One key limitation is that the file names for input and output are hardcoded into the file.
 
-This script provides output in both the Terminal and a text outputfile:
+This script provides output in both the Terminal and a text output file:
 - The created **text output file** of [PyPoll_Challenge.py](PyPoll_Challenge.py) is available at: [election_analysis.txt](analysis/election_analysis.txt).
 - A snapshot of the **Terminal output** of [PyPoll_Challenge.py](PyPoll_Challenge.py) is available at: [Election_Results_Command_Line.png](analysis/Election_Results_Command_Line.png). <details><summary>Expand <i>Election_Results_Command_Line.png</i> Image</summary>
   <p>
@@ -54,3 +54,6 @@ This script provides output in both the Terminal and a text outputfile:
 </details>
 
 ## Election-Audit Summary
+In a summary statement, provide a business proposal to the election commission on how this script can be used—with some modifications—for any election. Give at least two examples of how this script can be modified to be used for other elections.
+1. Change the input file (*file_to_load*) and output file (*file_to_save*) variables to user-defined inputs, instead of being hardcoded.
+2. ???
