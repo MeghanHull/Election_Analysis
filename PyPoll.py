@@ -4,7 +4,7 @@
 #------------------------------------------------------------------------------
 # Purpose  := Analyses election results in Python
 # Created  := 2022 May 23 23:21:05 UTC (Meghan E. Hull)
-# Modified := 2022 Jun 01 19:21:49 UTC (Meghan E. Hull)
+# Modified := 2022 Jun 02 01:56:05 UTC (Meghan E. Hull)
 #******************************************************************************
 # ANALYSIS REQUIREMENTS
 #----------------------------------------------------------------
@@ -29,13 +29,14 @@ candidate_votes = {}    # Data 4 - dictionary of candidate votes
 candidate_results =""   # Empty string for printing Data 2, 3, & 4
 
 # Initialize Data 5 variables - Winning Candidate and Winning Count Tracker
-winning_candidate = ""
-winning_count = 0
-winning_percentage = 0
+winning_candidate = ""          # Name of winning candidate
+winning_count = 0               # Number of votes for winning candidate
+winning_percentage = 0          # Percentage of total vote for winning candidate
 
-# Specify input file
-# Assign a variable for the file to load and the path (indirect path with os module)
+# Specify input & output file names
+# Assign a variable for the files and the path (indirect path with os module)
 file_to_load = os.path.join("Resources", "election_results.csv")
+file_to_save = os.path.join("analysis", "election_analysis.txt")
 
 #******************************************************************************
 # ANALYZE INPUT DATA
@@ -105,7 +106,7 @@ for candidate_name in candidate_votes:
         # Set the winning_candidate equal to the candidate's name.
         winning_candidate = candidate_name
 
-# Print winning candidate summary
+# Save winning candidate summary
 winning_candidate_summary = (
     f"-------------------------\n"
     f"Winner: {winning_candidate}\n"
@@ -116,9 +117,6 @@ winning_candidate_summary = (
 #******************************************************************************
 # WRITE OUTPUT
 #----------------------------------------------------------------
-# Create a filename variable to a direct or indirect path to the file.
-file_to_save = os.path.join("analysis", "election_analysis.txt")
-
 # Using the with statement open the file as a text file.
 with open(file_to_save, "w") as txt_file:
      # Results

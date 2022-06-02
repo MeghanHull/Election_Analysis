@@ -4,7 +4,7 @@
 #------------------------------------------------------------------------------
 # Purpose  := Analyses election results in Python
 # Created  := 2022 Jun 01 19:15:02 UTC (Meghan E. Hull)
-# Modified := 2022 Jun 01 20:28:49 UTC (Meghan E. Hull)
+# Modified := 2022 Jun 02 01:56:05 UTC (Meghan E. Hull)
 #******************************************************************************
 # ANALYSIS REQUIREMENTS
 #----------------------------------------------------------------
@@ -52,9 +52,10 @@ highest_turnout_county = ""     # Name of county with highest turnout
 highest_turnout_count = 0       # Number of votes for county with highest turnout
 highest_turnout_percentage = 0  # Percentage of total vote for county with highest turnout
 
-# Specify input file
-# Assign a variable for the file to load and the path (indirect path with os module)
+# Specify input & output file names
+# Assign a variable for the files and the path (indirect path with os module)
 file_to_load = os.path.join("Resources", "election_results.csv")
+file_to_save = os.path.join("analysis", "election_analysis.txt")
 
 #******************************************************************************
 # ANALYZE INPUT DATA
@@ -202,9 +203,6 @@ print(
 #----------------------------------------------------------------
 # C.S8 - Print to output file
 #----------------------------------------------------------------
-# Create a filename variable to a direct or indirect path to the file.
-file_to_save = os.path.join("analysis", "election_analysis.txt")
-
 # Using the with statement open the file as a text file.
 with open(file_to_save, "w") as txt_file:
      # Results
