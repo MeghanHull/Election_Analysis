@@ -28,8 +28,8 @@ The analysis of the election show that:
 - There were 369,711 votes cast in the election.
 - The breakdown of votes for each county in the precinct was:
 
-  | County | Percentage of Total Vote | Votes in County |
-  | ------------- | ------------- | ------------- |
+  | County | % of Total Vote | Votes in County |
+  | :---         |     :---:      |     :---:      |
   | Jefferson | 10.5% | 38,855 |
   | Denver | 82.8% | 306,055 |
   | Arapahoe | 6.7% | 24,801 |
@@ -42,9 +42,11 @@ The analysis of the election show that:
 - The winner of the election was:
   - Diana DeGette, who received 3.1% of the vote and 11,606 number of votes.
 
-### Python PyPoll_Challenge.py Script Summary
+### Summary of Python *PyPoll_Challenge.py* Script
 One key limitation is that the file names for input and output are hardcoded into the file.
-A snapshot of the **Terminal output** of [PyPoll_Challenge.py](PyPoll_Challenge.py) is available at: [Election_Results_Command_Line.png](analysis/Election_Results_Command_Line.png).
-The created **text output file** of [PyPoll_Challenge.py](PyPoll_Challenge.py) is available at: [election_analysis.txt](analysis/election_analysis.txt).
+
+This script provides output in both the Terminal and a text outputfile:
+- A snapshot of the **Terminal output** of [PyPoll_Challenge.py](PyPoll_Challenge.py) is available at: [Election_Results_Command_Line.png](analysis/Election_Results_Command_Line.png).
+- The created **text output file** of [PyPoll_Challenge.py](PyPoll_Challenge.py) is available at: [election_analysis.txt](analysis/election_analysis.txt).
 
 ## Election-Audit Summary
