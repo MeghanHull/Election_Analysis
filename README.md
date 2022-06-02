@@ -1,4 +1,18 @@
 # Election Analysis
+## Table of Contents
+<details>
+<summary>Click to expand</summary>
+
+- [Overview of Election Audit](#overview-of-election-audit)
+  - [Project Overview](#project-overview)
+  - [Purpose](#purpose)
+  - [Resources](#resources)
+- [Election Audit Results](#election-audit-results)
+  - [Audit Test Case Analysis](#audit-test-case-analysis)
+  - [Summary of Python *PyPoll_Challenge.py* Script](#summary-of-python-pypoll_challengepy-script)
+- [Election Audit Summary](#election-audit-summary)
+
+</details>
 
 ## Overview of Election Audit
 ### Project Overview
@@ -274,7 +288,11 @@ This script provides output in both the Terminal and a text output file:
   </p>
 </details>
 
-## Election-Audit Summary
-In a summary statement, provide a business proposal to the election commission on how this script can be used—with some modifications—for any election. Give at least two examples of how this script can be modified to be used for other elections.
+## Election Audit Summary
+<!-- In a summary statement, provide a business proposal to the election commission on how this script can be used—with some modifications—for any election. Give at least two examples of how this script can be modified to be used for other elections. -->
+Starting in 2023, Colorado will have 8 congressional precincts[^ref_precincts], with a variable number of counties in each precinct.
+
 1. Change the input file (*file_to_load*) and output file (*file_to_save*) variables to user-defined inputs, instead of being hardcoded.
 2. ???
+
+[^ref_precincts]: “Colorado's congressional districts.” Wikipedia, Wikimedia Foundation, 12 March 2022, at 04:34 (UTC), https://en.wikipedia.org/wiki/Colorado%27s_congressional_districts
