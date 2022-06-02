@@ -46,7 +46,11 @@ The analysis of the election show that:
 One key limitation is that the file names for input and output are hardcoded into the file.
 
 This script provides output in both the Terminal and a text outputfile:
-- A snapshot of the **Terminal output** of [PyPoll_Challenge.py](PyPoll_Challenge.py) is available at: [Election_Results_Command_Line.png](analysis/Election_Results_Command_Line.png).
 - The created **text output file** of [PyPoll_Challenge.py](PyPoll_Challenge.py) is available at: [election_analysis.txt](analysis/election_analysis.txt).
+- A snapshot of the **Terminal output** of [PyPoll_Challenge.py](PyPoll_Challenge.py) is available at: [Election_Results_Command_Line.png](analysis/Election_Results_Command_Line.png). <details><summary>Expand <i>Election_Results_Command_Line.png</i> Image</summary>
+  <p>
+  <img src="analysis/Election_Results_Command_Line.png">
+  </p>
+</details>
 
 ## Election-Audit Summary
