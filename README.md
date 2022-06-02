@@ -37,7 +37,11 @@ The analysis of the election show that:
 - The winner of the election was:
   - Diana DeGette, who received 3.1% of the vote and 11,606 number of votes.
 
-### Additional County
+### Additional County Data
+
+### Python PyPoll_Challenge.py Script
+A snapshot of the **Terminal output** of [PyPoll_Challenge.py](PyPoll_Challenge.py) is available at: [Election_Results_Command_Line.png](analysis/Election_Results_Command_Line.png).
+The created **text output file** of [PyPoll_Challenge.py](PyPoll_Challenge.py) is available at: [election_analysis.txt](analysis/election_analysis.txt).
 
 ### Challenges & Limitations
 
