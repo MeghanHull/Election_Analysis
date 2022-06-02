@@ -290,9 +290,21 @@ This script provides output in both the Terminal and a text output file:
 
 ## Election Audit Summary
 <!-- In a summary statement, provide a business proposal to the election commission on how this script can be used—with some modifications—for any election. Give at least two examples of how this script can be modified to be used for other elections. -->
-Starting in 2023, Colorado will have 8 congressional precincts[^ref_precincts], with a variable number of counties in each precinct.
+Starting in 2023, Colorado will have 8 congressional precincts[^ref_precincts], with a variable number of counties in each precinct.  With this in mind, there are several options to extend usage to any election:
+1. Keep the script the same, and manually make the data adhere to the code limitations
+   Requires manually organization of data into a single *election_results.csv* file in a *Resources* subfolder
+2. Modify script to read one user-defined input file
+   Change the input file (*file_to_load*) variable to user-defined input, instead of being hardcoded.
+3. Modify script to loop through all *.csv* files in a *Resources* subfolder
 
-1. Change the input file (*file_to_load*) and output file (*file_to_save*) variables to user-defined inputs, instead of being hardcoded.
-2. ???
+The best option would be dependent on how the larger data set is organized.  With a maximum of eight precincts, it may not take a substantial amount of time to run each precinct individually.  However, the Option 3 is recommended, with:
+- Precinct data organized into separate *.csv* files in a *Resources* subfolder, perhaps with the precinct number as the file name.
+- Change the input file (*file_to_load*) to be found by looping through the files in the subfolder.
+- Create one output file of the elecetion results for all precincts
+
+Optional additional changes may include:
+- Change output file (*file_to_save*) variable to user-defined input.
+- Add an option to create series of output files for each precinct.
+- Include a summary of election results by precinct.
 
 [^ref_precincts]: “Colorado's congressional districts.” Wikipedia, Wikimedia Foundation, 12 March 2022, at 04:34 (UTC), https://en.wikipedia.org/wiki/Colorado%27s_congressional_districts
